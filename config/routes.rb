@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  devise_for :users
+
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :events
 
@@ -8,6 +10,5 @@ Rails.application.routes.draw do
   root 'events#index'
 
 
-    devise_for :users
 
 end
